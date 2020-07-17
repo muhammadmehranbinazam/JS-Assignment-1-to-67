@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>JS 1 to 40</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="app.js"></script>
 </head>
+
 <body>
     <figure>
-    <img class="image" alt="mobile image for sale" src="img/m1.jpg" onclick="purchase()">
-    <img class="image" alt="mobile image for sale" src="img/m2.jpeg" onclick="purchase()">
-    <img class="image" alt="mobile image for sale" src="img/m3.jpg" onclick="purchase()">
-    <img class="image" alt="mobile image for sale" src="img/m4.jpg" onclick="purchase()">
-    <img class="image" alt="mobile image for sale" src="img/m5.jpg" onclick="purchase()">
+        <img class="image" alt="mobile image for sale" src="img/m1.jpg" onclick="purchase()">
+        <img class="image" alt="mobile image for sale" src="img/m2.jpeg" onclick="purchase()">
+        <img class="image" alt="mobile image for sale" src="img/m3.jpg" onclick="purchase()">
+        <img class="image" alt="mobile image for sale" src="img/m4.jpg" onclick="purchase()">
+        <img class="image" alt="mobile image for sale" src="img/m5.jpg" onclick="purchase()">
     </figure>
 
     <table>
@@ -29,35 +31,43 @@
             <td>1</td>
             <td>Musa</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
-        </tr><tr id="row">
+        </tr>
+        <tr id="row">
             <td>3</td>
             <td>ALi</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
-        </tr><tr id="row">
+        </tr>
+        <tr id="row">
             <td>4</td>
             <td>Noman</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
-        </tr><tr id="row">
+        </tr>
+        <tr id="row">
             <td>5</td>
             <td>Naveed</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
-        </tr><tr id="row">
+        </tr>
+        <tr id="row">
             <td>6</td>
             <td>Azam</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
-        </tr><tr id="row">
+        </tr>
+        <tr id="row">
             <td>7</td>
             <td>Qasim</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
-        </tr><tr id="row">
+        </tr>
+        <tr id="row">
             <td>8</td>
             <td>Azeem</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
-        </tr><tr id="row">
+        </tr>
+        <tr id="row">
             <td>9</td>
             <td>Ammar</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
-        </tr><tr id="row">
+        </tr>
+        <tr id="row">
             <td>10</td>
             <td>Adeeb</td>
             <td><button onclick="deleteitem(this)">Delete</button></td>
@@ -68,80 +78,125 @@
     <figure>
         <img id="changerimage" class="image" src="img/m3.jpg" onmouseover="changeimage()" onmouseout="previousimage()">
     </figure>
- <p id="number">0</p>
- <button onclick="increase()">Increase</button>
- <button onclick="decrease()">Increase</button>
- 
-<p id="fname">s</p>
-<p id="lname">s</p>
-<p id="email">s</p>
-<p id="pass">s</p>
+    <p id="number">0</p>
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Increase</button>
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName">
 
-<table>
-    <tr>
-        <th>Index</th>
-        <th>Student Name</th>
-        <td></td>
-    </tr>
-    <tr id="row">
-        <td>0</td>
-        <td id="name">Mehran</td>
-        <td><button onclick="deleteitem(this)">Delete</button>
-        <button onclick="edit()">Edit</button></td>
-    </tr>
-    <tr id="row">
-        <td>1</td>
-        <td id="name">Musa</td>
-        <td><button onclick="deleteitem(this)">Delete</button>
-            
-        <button onclick="edit()">Edit</button></td>
-    </tr><tr id="row">
-        <td>3</td>
-        
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" id="lastName">
+
+    <label for="Email">Email</label>
+    <input type="email" name="email" id="Email">
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+
+    <label for="password">Confirm Password</label>
+    <input type="password" name="password" id="password">
+    <button onclick="signup">submit</button>
+    <p id="fname">s</p>
+    <p id="lname">s</p>
+    <p id="email">s</p>
+    <p id="pass">s</p>
+
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Student Name</th>
+            <td></td>
+        </tr>
+        <tr id="row">
+            <td>0</td>
+            <td id="name">Mehran</td>
+            <td><button onclick="deleteitem(this)">Delete</button>
+                <button onclick="edit()">Edit</button></td>
+        </tr>
+        <tr id="row">
+            <td>1</td>
+            <td id="name">Musa</td>
+            <td><button onclick="deleteitem(this)">Delete</button>
+
+                <button onclick="edit()">Edit</button></td>
+        </tr>
+        <tr id="row">
+            <td>3</td>
+
             <td id="name">ALi</td>
             <td><button onclick="deleteitem(this)">Delete</button>
                 <button onclick="edit()">Edit</button></td>
-    </tr><tr id="row">
-        <td>4</td>
-       
+        </tr>
+        <tr id="row">
+            <td>4</td>
+
             <td id="name">Noman</td>
             <td><button onclick="deleteitem(this)">Delete</button>
                 <button onclick="edit()">Edit</button></td>
-    </tr><tr id="row">
-        <td>5</td>
-       
+        </tr>
+        <tr id="row">
+            <td>5</td>
+
             <td id="name">Naveed</td>
             <td><button onclick="deleteitem(this)">Delete</button>
                 <button onclick="edit()">Edit</button></td>
-    </tr><tr id="row">
-        <td>6</td>
-      
+        </tr>
+        <tr id="row">
+            <td>6</td>
+
             <td id="name">Azam</td>
             <td><button onclick="deleteitem(this)">Delete</button>
                 <button onclick="edit()">Edit</button></td>
-    </tr><tr id="row">
-        <td>7</td>
-       
-            <td id="name">Qasim</td> 
+        </tr>
+        <tr id="row">
+            <td>7</td>
+
+            <td id="name">Qasim</td>
             <td><button onclick="deleteitem(this)">Delete</button>
                 <button onclick="edit()">Edit</button></td>
-    </tr><tr id="row">
-        <td>8</td>
-      
+        </tr>
+        <tr id="row">
+            <td>8</td>
+
             <td id="name">Azeem</td>
             <td><button onclick="deleteitem(this)">Delete</button>
                 <button onclick="edit()">Edit</button></td>
-    </tr><tr id="row">
-        <td>9</td>
+        </tr>
+        <tr id="row">
+            <td>9</td>
             <td id="name">Ammar</td>
             <td><button onclick="deleteitem(this)">Delete</button>
                 <button onclick="edit()">Edit</button></td>
-    </tr><tr id="row">
-        <td>10</td>
+        </tr>
+        <tr id="row">
+            <td>10</td>
             <td id="name">Adeeb</td>
             <td><button onclick="deleteitem(this)">Delete</button>
                 <button onclick="edit()">Edit</button></td>
-    </tr>
-</table>
+        </tr>
+    </table>
+
+
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
