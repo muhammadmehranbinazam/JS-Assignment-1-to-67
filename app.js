@@ -2201,12 +2201,58 @@ function edit(){
 
 
 
-function maincontent(){
-    
-    var elem = document.getElementById('main-content');
-    var child = elem.children[0];
-    var child = elem.firstElementChild;
-}
 
-maincontent();
+// (i)
+const ele = document.getElementById('main-content'); 
+
+// (ii)
+console.log(ele.childNodes);
+
+// (iii)
+const render = document.getElementByClassName('render'); 
+console.log(render);
+
+// (iv)
+document.getElementById('first-name').value = 'testinput';
+
+// (v)
+document.getElementById('last-name').value = 'testinput';
+document.getElementById('email').value = 'testinput';
+
+
+
+// i. What is node type of element having id “form-content”.
+// ii. Show node type of element having id “lastName” and its child node.
+// iii. Update child node of element having id “lastName”.
+// iv. Get First and last child of id “main-content”.
+// v. Get next and previous siblings of id “lastName”.
+// vi. Get parent node and node type of element having id “email”
+
+// (i)
+document.getElementById('form-content').nodeType; 
+
+// (ii)
+document.getElementById('lastName').nodeType; 
+document.getElementById('lastName').firstElementChild.nodeType; 
+
+
+// (iv)
+document.getElementById('main-content').firstElementChild; 
+document.getElementById('main-content').lastElementChild; 
+
+// (v)
+document.getElementById('lastName').nextSibling; 
+document.getElementById('lastName').previousSibling; 
+
+// (vi)
+document.getElementById('email').parentNode; 
+document.getElementById('email').nodeType;
+
+
+
+
+
+
+
+
 
